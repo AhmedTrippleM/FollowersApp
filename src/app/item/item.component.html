@@ -1,0 +1,9 @@
+<p>Parent Works : </p>
+<ng-container *ngFor="let child of [1,2,3,4,5];let i = index">
+  <app-item-details #childRef [title]="myTitle + '#'+ i "> </app-item-details>
+  <hr/>
+</ng-container>
+
+
+<hr/>
+<button (click)="myTitle = 'Title Changed'">Change Title</button>

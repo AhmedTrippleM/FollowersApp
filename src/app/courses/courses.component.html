@@ -1,0 +1,14 @@
+<p>courses works!</p>
+
+<p> {{course.title | uppercase}} </p>
+<p> {{course.rate |number:'1.1-2'}} </p>
+<p> {{course.students |number }} </p>
+<p> {{course.price|currency:'AUD':true:'3.3-3' }} </p>
+<p> {{course.releaseDate |date:'longDate'}} </p>
+<hr/>
+<p>{{text |titlecase}}</p>
+<i [class]="isClicked ? 'glyphicon glyphicon-star-empty' :'glyphicon glyphicon-star'" (click)="onClick()" style="font-size: 50px"></i>
+
+<input [(ngModel)]="title" style="font-size: 30px" type="text" />
+<br>
+<p style="font-size: 30px">{{title | textFormat}}</p>
